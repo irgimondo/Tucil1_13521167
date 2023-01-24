@@ -41,9 +41,14 @@ int main()
 ();
 
  
-  clock_t start = clock();
 
 
+  tambaharr(a, b, c, d);
+  tambaharr(a, b, d, c);
+  tambaharr(a, c, b, d);
+  tambaharr(a, c, d, b);
+  tambaharr(a, d, b, c);
+  tambaharr(a, d, c, b);
   tambaharr(c, b, a, d);
   tambaharr(c, b, d, a);
   tambaharr(c, d, a, b);
@@ -54,12 +59,6 @@ int main()
   tambaharr(d, b, c, a); 
   tambaharr(d, c, a, b);
   tambaharr(d, c, b, a);
-  tambaharr(a, b, c, d);
-  tambaharr(a, b, d, c);
-  tambaharr(a, c, b, d);
-  tambaharr(a, c, d, b);
-  tambaharr(a, d, b, c);
-  tambaharr(a, d, c, b);
   tambaharr(b, a, c, d);
   tambaharr(b, a, d, c);
   tambaharr(b, c, a, d);
@@ -79,9 +78,7 @@ int main()
 
   cout << endl << "Hasil =  " << temp << " buah solusi" << endl;
 
-  // Waktu
 
-  printf("Waktu: %.5fs\n", (float)(clock() - start)/CLOCKS_PER_SEC);
 
   return 0;
 }
