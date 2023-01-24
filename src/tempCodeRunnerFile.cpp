@@ -1,0 +1,1 @@
+// Menghitung waktu eksekusi
